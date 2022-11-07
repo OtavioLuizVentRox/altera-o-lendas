@@ -8,19 +8,16 @@
     padding: none;
 }
 
+#logo {
+    display: flex;
+    justify-content: space-around;
+    height: 100%;
+}
+
 header {
     border-bottom: 2px solid rgb(218, 78, 46);
     background-color: rgba(0, 0, 0, 0.943);
     padding-top: 20px;
-}
-
-#logo {
-    display: flex;
-    justify-content: space-around;
-    height: 50px;
-    width: 125px;
-    margin: none;
-    padding: none;
 }
 
 a {
@@ -44,7 +41,7 @@ nav {
     justify-content: space-around;
     align-items: center;
     font-family: Arial, Helvetica, sans-serif;
-    height: 8vh;
+    height: 15vh;
 }
 
 .nav-list {
@@ -76,7 +73,7 @@ nav {
     }
     .nav-list {
         position: absolute;
-        top: 11.5vh;
+        top: 20%;
         right: 0;
         width: 50vw;
         height: 40vh;
@@ -104,6 +101,7 @@ nav {
 
 @keyframes navLinkFade {
     from {
+        display: none;
         opacity: 0;
         transform: translateX(50px);
     }
