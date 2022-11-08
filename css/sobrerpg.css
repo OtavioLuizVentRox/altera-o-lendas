@@ -59,6 +59,7 @@
           background: #fff;
           margin: 8px;
           transition: .3s;
+          border: .1px solid orangered;
       }
       
       @media (max-width:999px) {
@@ -67,7 +68,7 @@
           }
           .nav-list {
               position: absolute;
-              top: 20%;
+              top: 19%;
               right: 0;
               width: 60vw;
               height: 50vh;
@@ -80,12 +81,17 @@
               border-left: 2px solid rgb(218, 78, 46);
               border-bottom: 2px solid rgb(218, 78, 46);
           }
+          .nav-list::before {
+              display: none;
+              opacity: 0;
+          }
           .nav-list li {
               margin-left: 0;
               opacity: 0;
           }
           .mobile-menu {
               display: block;
+              border: .1px solid white;
           }
       }
       
@@ -107,6 +113,7 @@
       
       .mobile-menu.active .line1 {
           transform: rotate(-45deg) translate(-8px, 8px);
+          background-color: orangered;
       }
       
       .mobile-menu.active .line2 {
@@ -115,6 +122,7 @@
       
       .mobile-menu.active .line3 {
           transform: rotate(45deg) translate(-5px, -7px);
+          background-color: orangered;
       }
       /* CONTEUDO DO BODY ABAIXO */
       
