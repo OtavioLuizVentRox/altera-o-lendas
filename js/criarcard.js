@@ -25,5 +25,5 @@ function enviarform() {
         document.getElementById('mensagem').focus();
         return false
     }
-    alert('Seu formulario foi enviado com sucesso!')
+    alert(`Olá, ficamos extremamente feliz e gratos por dedicar o seu tempo e confiança em nossa divulgação. Em breve iremos entrar em contato para concluir o processo da sua divulgação!`);
 }

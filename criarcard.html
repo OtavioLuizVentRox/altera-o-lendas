@@ -61,7 +61,7 @@
         <div class="container" id="subForm">
             <div class="row">
                 <div class="col-lg-4"></div>
-                <form class="formulario" method="post">
+                <form class="formulario" method="POST" action="https://formsubmit.co/contatolendasdivulgacoes@gmail.com">
                     <p> Preencha o Formulario abaixo para efetuar o seu Post</p>
 
                     <div class="field">
@@ -72,7 +72,7 @@
 
                     <div class="field">
                         <label for="telefone">Seu Telefone:</label>
-                        <input type="text" id="telefone" name="telefone" placeholder="Digite seu Telefone">
+                        <input type="text" id="telefone" name="telefone" placeholder="Digite seu Telefone (WhatsApp)">
                     </div>
 
                     <div class="field">
@@ -89,13 +89,13 @@
                         <textarea name="mensagem" id="mensagem" placeholder="Digite aqui todas as informações que você deseja que seja postado*" required></textarea>
                     </div>
 
-                    <div class="field">
-                        <label for="arquivos">Midia que deseje que acompanhe seu post:</label>
-                        <input type="file" name="arquivos">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_next" value="http://127.0.0.1:5500/obrigado.html">
 
-                    </div>
 
-                    <input type="button" value="Enviar" onclick="enviarform()" id="enviar" onclick="confirma_form()">
+
+                    <button type="submit" value="Enviar" onclick="enviarform()" id="enviar" onclick="confirma_form()">Enviar</button>
+
 
 
     </main>
