@@ -21,9 +21,11 @@
         }
         
         .logo {
-            font-size: 24px;
+            font-size: 18px;
             text-transform: uppercase;
             letter-spacing: 4px;
+            color: orangered;
+            margin-bottom: 22px;
         }
         
         nav {
@@ -90,7 +92,7 @@
             .nav-list {
                 opacity: 0;
                 position: absolute;
-                top: 18.5vh;
+                top: 18vh;
                 right: 0;
                 width: 50vw;
                 height: 62vh;
@@ -100,10 +102,11 @@
                 justify-content: space-around;
                 border-left: 2px solid rgb(218, 78, 46);
                 border-bottom: 2px solid rgb(218, 78, 46);
+                transition: .8s all
             }
             .nav-list.active {
                 opacity: 1;
-                transition: .8s;
+                transition: .8s all;
             }
             .nav-list li {
                 margin-left: 0;

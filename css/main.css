@@ -101,7 +101,7 @@ nav {
     .nav-list {
         opacity: 0;
         position: absolute;
-        top: 18.5vh;
+        top: 18vh;
         right: 0;
         width: 50vw;
         height: 62vh;
@@ -111,10 +111,11 @@ nav {
         justify-content: space-around;
         border-left: 2px solid rgb(218, 78, 46);
         border-bottom: 2px solid rgb(218, 78, 46);
+        transition: .8s all
     }
     .nav-list.active {
         opacity: 1;
-        transition: .8s;
+        transition: .8s all;
     }
     .nav-list li {
         margin-left: 0;
@@ -335,6 +336,30 @@ article {
     box-shadow: rgba(255, 255, 255, 0.200) 5px 5px 20px;
     margin-top: 30px;
     padding-top: 4px;
+}
+
+
+/* FOOTER */
+
+
+/* VOLTAR AO TOPO BUTTON */
+
+.topo {
+    background-color: white;
+    position: fixed;
+    bottom: 20px;
+    right: -500px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    transition: .5s all;
+}
+
+.show-button .topo {
+    right: 20px;
+    transition: .5s all;
 }
 
 
