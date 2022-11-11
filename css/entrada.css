@@ -159,6 +159,7 @@ article {
 body {
     background-color: #222121;
     color: white;
+    min-width: 10px;
 }
 
 #titulo {
