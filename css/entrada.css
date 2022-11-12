@@ -169,7 +169,8 @@ body {
     border-radius: 10px;
 }
 
-p {
+p .mast__text,
+.links {
     background-color: rgba(0, 0, 0, 0.761);
     cursor: pointer;
     color: rgb(255, 0, 0);
